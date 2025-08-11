@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts - Pet Adoption Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🐾 Paws & Hearts</h1>
+            </div>
+            <nav class="nav">
+                <a href="#pets" class="nav-link">Available Pets</a>
+                <a href="#process" class="nav-link">Adoption Process</a>
+                <a href="#stories" class="nav-link">Success Stories</a>
+                <a href="#volunteer" class="nav-link">Volunteer</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Find Your Perfect Companion</h2>
+                <p>Every pet deserves a loving home. Help us connect hearts and paws.</p>
+                <a href="#pets" class="cta-button">Meet Our Pets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Pets Section -->
+    <section id="pets" class="pets-section">
+        <div class="container">
+            <h2 class="section-title">Available Pets</h2>
+            
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <input type="radio" id="all-pets" name="pet-filter" checked>
+                <label for="all-pets" class="filter-btn">All Pets</label>
+                
+                <input type="radio" id="dogs-only" name="pet-filter">
+                <label for="dogs-only" class="filter-btn">Dogs</label>
+                
+                <input type="radio" id="cats-only" name="pet-filter">
+                <label for="cats-only" class="filter-btn">Cats</label>
+            </div>
+
+            <!-- Pet Grid -->
+            <div class="pets-grid">
+                <!-- Dog Cards -->
+                <div class="pet-card dog">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Max the Golden Retriever">
+                        <input type="checkbox" id="fav-max" class="favorite-checkbox">
+                        <label for="fav-max" class="favorite-btn">♡</label>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Max</h3>
+                        <p class="pet-breed">Golden Retriever</p>
+                        <p class="pet-age">3 years old</p>
+                        <div class="pet-tags">
+                            <span class="tag playful">Playful</span>
+                            <span class="tag friendly">Friendly</span>
+                        </div>
+                        <p class="pet-description">Max loves playing fetch and is great with kids!</p>
+                        <button class="adopt-btn">Adopt Me</button>
+                    </div>
+                </div>
+
+                <div class="pet-card dog">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Luna the Border Collie">
+                        <input type="checkbox" id="fav-luna" class="favorite-checkbox">
+                        <label for="fav-luna" class="favorite-btn">♡</label>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Luna</h3>
+                        <p class="pet-breed">Border Collie</p>
+                        <p class="pet-age">2 years old</p>
+                        <div class="pet-tags">
+                            <span class="tag energetic">Energetic</span>
+                            <span class="tag smart">Smart</span>
+                        </div>
+                        <p class="pet-description">Luna is incredibly intelligent and loves learning new tricks.</p>
+                        <button class="adopt-btn">Adopt Me</button>
+                    </div>
+                </div>
+
+                <div class="pet-card dog">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Buddy the Beagle">
+                        <input type="checkbox" id="fav-buddy" class="favorite-checkbox">
+                        <label for="fav-buddy" class="favorite-btn">♡</label>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Buddy</h3>
+                        <p class="pet-breed">Beagle</p>
+                        <p class="pet-age">4 years old</p>
+                        <div class="pet-tags">
+                            <span class="tag gentle">Gentle</span>
+                            <span class="tag loyal">Loyal</span>
+                        </div>
+                        <p class="pet-description">Buddy is a calm and loving companion perfect for families.</p>
+                        <button class="adopt-btn">Adopt Me</button>
+                    </div>
+                </div>
+
+                <!-- Cat Cards -->
+                <div class="pet-card cat">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Whiskers the Tabby">
+                        <input type="checkbox" id="fav-whiskers" class="favorite-checkbox">
+                        <label for="fav-whiskers" class="favorite-btn">♡</label>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Whiskers</h3>
+                        <p class="pet-breed">Tabby Cat</p>
+                        <p class="pet-age">1 year old</p>
+                        <div class="pet-tags">
+                            <span class="tag curious">Curious</span>
+                            <span class="tag playful">Playful</span>
+                        </div>
+                        <p class="pet-description">Whiskers loves exploring and playing with feather toys.</p>
+                        <button class="adopt-btn">Adopt Me</button>
+                    </div>
+                </div>
+
+                <div class="pet-card cat">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mittens the Persian">
+                        <input type="checkbox" id="fav-mittens" class="favorite-checkbox">
+                        <label for="fav-mittens" class="favorite-btn">♡</label>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Mittens</h3>
+                        <p class="pet-breed">Persian Cat</p>
+                        <p class="pet-age">3 years old</p>
+                        <div class="pet-tags">
+                            <span class="tag calm">Calm</span>
+                            <span class="tag affectionate">Affectionate</span>
+                        </div>
+                        <p class="pet-description">Mittens enjoys quiet moments and gentle cuddles.</p>
+                        <button class="adopt-btn">Adopt Me</button>
+                    </div>
+                </div>
+
+                <div class="pet-card cat">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Shadow the Black Cat">
+                        <input type="checkbox" id="fav-shadow" class="favorite-checkbox">
+                        <label for="fav-shadow" class="favorite-btn">♡</label>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Shadow</h3>
+                        <p class="pet-breed">Black Cat</p>
+                        <p class="pet-age">2 years old</p>
+                        <div class="pet-tags">
+                            <span class="tag shy">Shy</span>
+                            <span class="tag sweet">Sweet</span>
+                        </div>
+                        <p class="pet-description">Shadow is a gentle soul who warms up with patience and love.</p>
+                        <button class="adopt-btn">Adopt Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2 class="section-title">Adoption Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Meet</h3>
+                    <p>Browse our available pets online and visit us to meet your potential new family member.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Application</h3>
+                    <p>Fill out our adoption application form with information about your living situation and experience.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Interview</h3>
+                    <p>Have a friendly chat with our adoption counselors to ensure the perfect match.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Home Visit</h3>
+                    <p>We'll visit your home to make sure it's safe and suitable for your new pet.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Welcome Home!</h3>
+                    <p>Complete the adoption paperwork and welcome your new family member home!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="stories" class="stories-section">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-images">
+                        <div class="before-after">
+                            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Rocky before adoption" class="before-img">
+                            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Rocky after adoption" class="after-img">
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Rocky's Journey</h3>
+                        <p>"Rocky was shy and scared when he first arrived. Now he's the happiest dog and loves going on adventures with our family!" - The Johnson Family</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-images">
+                        <div class="before-after">
+                            <img src="https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bella before adoption" class="before-img">
+                            <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bella after adoption" class="after-img">
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Bella's New Life</h3>
+                        <p>"Bella was found as a stray kitten. Today, she's living her best life as our pampered princess!" - Maria & Tom</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-images">
+                        <div class="before-after">
+                            <img src="https://images.pexels.com/photos/1829979/pexels-photo-1829979.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Charlie before adoption" class="before-img">
+                            <img src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Charlie after adoption" class="after-img">
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Charlie's Transformation</h3>
+                        <p>"Charlie went from being anxious and withdrawn to becoming a confident therapy dog who brings joy to nursing home residents." - Sarah M.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form Section -->
+    <section id="volunteer" class="volunteer-section">
+        <div class="container">
+            <h2 class="section-title">Become a Volunteer</h2>
+            <div class="volunteer-content">
+                <div class="volunteer-info">
+                    <h3>Make a Difference</h3>
+                    <p>Join our amazing team of volunteers and help us provide the best care for our animals. Whether you can spare a few hours a week or just occasional weekends, every contribution makes a difference.</p>
+                </div>
+                <form class="volunteer-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Areas of Interest (Check all that apply):</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="dog-walking">
+                                <span class="checkmark"></span>
+                                Dog Walking
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="cat-socialization">
+                                <span class="checkmark"></span>
+                                Cat Socialization
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="cleaning">
+                                <span class="checkmark"></span>
+                                Cleaning & Maintenance
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="events">
+                                <span class="checkmark"></span>
+                                Events & Fundraising
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="transport">
+                                <span class="checkmark"></span>
+                                Pet Transportation
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="admin">
+                                <span class="checkmark"></span>
+                                Administrative Tasks
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Availability:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="availability" value="weekdays">
+                                <span class="checkmark"></span>
+                                Weekdays
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="availability" value="weekends">
+                                <span class="checkmark"></span>
+                                Weekends
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="availability" value="evenings">
+                                <span class="checkmark"></span>
+                                Evenings
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Previous Experience with Animals</label>
+                        <textarea id="experience" name="experience" rows="4" placeholder="Tell us about your experience with animals..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🐾 Paws & Hearts</h3>
+                    <p>Connecting loving hearts with furry souls since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📍 123 Pet Street, Animal City, AC 12345</p>
+                    <p>📞 (555) 123-PETS</p>
+                    <p>✉️ info@pawsandhearts.org</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Friday: 10AM - 6PM</p>
+                    <p>Saturday: 9AM - 5PM</p>
+                    <p>Sunday: 12PM - 4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Paws & Hearts Animal Shelter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
